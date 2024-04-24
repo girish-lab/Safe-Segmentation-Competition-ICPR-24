@@ -1,7 +1,9 @@
 title: Safe Segmentation Competition-ICPR-24
+description: ICPR 2024 Competition on Safe Segmentation of Drive Scenes in Unstructured Traffic and Adverse Weather Conditions.
 lsi: false
 safe: true
-source: [your repo's top level directory]
+source: https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24
+show_downloads: false
 incremental: false
 highlighter: rouge
 theme: jekyll-theme-cayman
