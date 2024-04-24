@@ -11,17 +11,23 @@ is a regular competition running for several months aimed at assessing the perfo
 
 
 <h2 align="center">
-     Challenges  
+     Goal   
 </h2>
 
 <p align="center">
 The central challenge addressed by the competition is optimizing the Safe mIoU metric for semantic segmentation in adverse weather conditions to ensure the safety of autonomous driving systems. Semantic segmentation plays a pivotal role in enabling autonomous vehicles to understand their surroundings, but adverse weather conditions pose significant challenges, often leading to hazardous situations. The competition aims to develop robust models that accurately segment driving scenes even in adverse weather conditions, focusing on prioritizing safety-related mispredictions.
 </p>
 
-<h2 align="center">
-    Awards
-</h2>
+<h2 align="center"> Timeline </h2>
 
+    1. Reg. Deadline: July 21, 2024
+    2. Competition Report Submission Deadline: August 18, 2024
+    3. Camera-Ready Papers: September 02, 2024	
+    4. Communicate Winners to Chairs: October 28, 2024	
+    5. Presentation at ICPR Conference: December 1-5, 2024	
+
+    
+<h2 align="center"> Awards </h2>
 
     1 
     2
@@ -29,9 +35,7 @@ The central challenge addressed by the competition is optimizing the Safe mIoU m
 
 
 
-<h2 align="center">
-    Dataset details
-</h2>
+<h2 align="center"> Dataset details </h2>
 
 
 
@@ -48,28 +52,20 @@ The dataset consists of images collected in an unstructured road scenario, drivi
 The dataset, including training data, ground truth, and an evaluation script, will be made publicly available post-competition in accordance with ICPR guidelines.
 </p>
 
-<h2 align="center">
-    Methods:
-</h2>
+<h2 align="center"> Methods: </h2>
 
 
-<h2 align="center">
-    Evaluation Matrics:
-</h2>
+<h2 align="center"> Evaluation Matrics: </h2>
 
 
     1 SafeIoU
     2 ...
     3. code [link]([https:](https://github.com/Furqan7007/IDDAW_kit))
 
-<h2 align="center">
-    Ladderboard
-</h2>
+<h2 align="center"> Leaderboard </h2>
 
 
-<h2 align="center">
-    Organigers
-</h2>
+<h2 align="center"> Organigers </h2>
     
 Dr Girish Varma  Assistant Prof, C-STAR and Machine Learning Lab at IIIT Hyderabad
 
@@ -81,9 +77,7 @@ Sandeep Nagar, Grad Student, ML Lab, IIIT-Hyderabad
 
 
 
-<h2 align="center">
-    Refrence
-</h2>
+<h2 align="center"> Refrence </h2>
 
 https://iddaw.github.io/
 
