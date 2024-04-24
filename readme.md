@@ -7,12 +7,12 @@
 is a regular competition running for several months aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow.
 </p>
     
+<h2 align="center"> Updates </h2>
+
+<h2 align="center"> Regrestration </h2>
 
 
-
-<h2 align="center">
-     Goal   
-</h2>
+<h2 align="center"> Objective </h2>
 
 <p align="center">
 The central challenge addressed by the competition is optimizing the Safe mIoU metric for semantic segmentation in adverse weather conditions to ensure the safety of autonomous driving systems. Semantic segmentation plays a pivotal role in enabling autonomous vehicles to understand their surroundings, but adverse weather conditions pose significant challenges, often leading to hazardous situations. The competition aims to develop robust models that accurately segment driving scenes even in adverse weather conditions, focusing on prioritizing safety-related mispredictions.
@@ -26,7 +26,8 @@ The central challenge addressed by the competition is optimizing the Safe mIoU m
     4. Communicate Winners to Chairs: October 28, 2024	
     5. Presentation at ICPR Conference: December 1-5, 2024	
 
-    
+<h2 align="center"> Guidlines </h2>
+
 <h2 align="center"> Awards </h2>
 
     1 
