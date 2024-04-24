@@ -2,6 +2,7 @@ title: Safe Segmentation Competition-ICPR-24
 description: Safe Segmentation of Drive Scenes in Unstructured Traffic and Adverse Weather Conditions.
 lsi: false
 safe: true
+logo: /assets/iddaw_bg.png
 source: https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24
 show_downloads: false
 incremental: false
