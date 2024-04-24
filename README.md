@@ -1,1 +1,1 @@
-# safe_segmentation
+# Safe Segmentation Comptetion, ICPR'24
