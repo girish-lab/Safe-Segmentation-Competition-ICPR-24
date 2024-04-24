@@ -70,7 +70,6 @@ The dataset, including training data, ground truth, and an evaluation script, wi
 <h2 align="center">
     Organigers
 </h2>
-<p align="center">
     
 Dr Girish Varma  Assistant Prof, C-STAR and Machine Learning Lab at IIIT Hyderabad
 
@@ -78,7 +77,6 @@ Furqan Ahamad, Grad Student, ML Lab, IIIT-Hyderabad
 
 Sandeep Nagar, Grad Student, ML Lab, IIIT-Hyderabad
 
-</p>
 
 
 
