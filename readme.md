@@ -85,7 +85,7 @@ Sandeep Nagar, ML Lab, IIIT-Hyderabad
 
 
 
-<h2 align="center"> Refrence </h2>
+<h2 align="center"> Reference </h2>
 
 https://iddaw.github.io/
 
