@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <a href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24">ICPR 2024 Competition on Safe Segmentation of Drive Scenes in  Unstructured Traffic and Adverse Weather Conditions</a>
+    <a href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24"> ICPR 2024 Competition on Safe Segmentation of Drive Scenes in  Unstructured Traffic and Adverse Weather Conditions</a>
 </h1>
 
 <p align="center">
@@ -72,11 +72,11 @@ The dataset, including training data, ground truth, and an evaluation script, wi
 
 <h2 align="center"> Organigers </h2>
     
-Dr Girish Varma  Assistant Prof, C-STAR and Machine Learning Lab at IIIT Hyderabad
+Dr Girish Varma, C-STAR and ML Lab at IIIT Hyderabad
 
-Furqan Ahamad, Grad Student, ML Lab, IIIT-Hyderabad
+Furqan Ahamad, ML Lab, IIIT-Hyderabad
 
-Sandeep Nagar, Grad Student, ML Lab, IIIT-Hyderabad
+Sandeep Nagar, ML Lab, IIIT-Hyderabad
 
 
 
@@ -101,10 +101,13 @@ Furqan Ahmed Shaik, Abhishek Reddy, Nikhil Reddy Billa, Kunal Chaudhary, Sunny M
     
 
 <h2 align="center">
-    Contacts:  Names and contact info
+    Contacts:
 </h2>
+If you have any question regarding to this Competition, please send an email to the following address:
 
-Furqan Ahamad, furqan.shaik@research.iiit.ac.in 
+furqan.shaik@research.iiit.ac.in or sandeep.nagar@research.iiit.ac.in
+
+Furqan Ahamad
 
 [Sandeep Nagar](https://twitter.com/NaagarRN)
 
