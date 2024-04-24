@@ -24,11 +24,14 @@ The central challenge addressed by the competition is optimizing the Safe mIoU m
 
 <h2 align="center"> Timeline </h2>
 
-    1. Reg. Deadline: July 21, 2024
-    2. Competition Report Submission Deadline: August 18, 2024
-    3. Camera-Ready Papers: September 02, 2024	
-    4. Communicate Winners to Chairs: October 28, 2024	
-    5. Presentation at ICPR Conference: December 1-5, 2024	
+| Deadline    | Date |
+| -------- | ------- |
+| Registration    | July 21, 2024 |
+| Competition Report Submission  | August 18, 2024    |
+| Camera-Ready Papers | September 02, 2024     |
+| Communicate Winners to Chairs    | October 28, 2024    |
+| Presentation at ICPR Conference | December 1-5, 2024 |
+
 
 <h2 align="center"> Guidlines </h2>
 
