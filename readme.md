@@ -9,6 +9,10 @@ is a competition running for several months aimed at assessing the performance o
     
 <h2 align="center"> Updates </h2>
 
+        1. Regristration Open.
+        2. 
+        3. 
+
 <h2 align="center"> Regrestration </h2>
 
 
