@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <a href="https://github.com/girish-lab/Safe-Segmentation-Comptetion-ICPR-24">Safe Segmentation Comptetion, ICPR'24</a>
+    <a href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24">Safe Segmentation Comptetion, ICPR'24</a>
 </h1>
 
 <p align="center">
