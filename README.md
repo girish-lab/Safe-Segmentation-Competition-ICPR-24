@@ -1,5 +1,12 @@
 
-# [Safe Segmentation Comptetion, ICPR'24](https://girish-lab.github.io/safe_segmentation/)
+<h1 align="center">
+    <a href="https://girish-lab.github.io/safe_segmentation/">Safe Segmentation Comptetion, ICPR'24</a>
+    
+</h1>
+
+
+
+    
 
 ICPR 2024 Competition on Safe Segmentation of Drive Scenes in  Unstructured Traffic and Adverse Weather Conditions" is a regular competition running for several months aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow.
 
@@ -13,9 +20,10 @@ The central challenge addressed by the competition is optimizing the Safe mIoU m
 
 ## Dataset details
 
+[dataset page](https://iddaw.github.io/)
+
 [download here](https://idd.insaan.iiit.ac.in/dataset/download/)
 
-[dataset page](https://iddaw.github.io/)
 
 The dataset consists of images collected in an unstructured road scenario, driving in adverse weather conditions of rain, fog, lowlight and snow. Each individual RGB image has a more detailed near-infrared image (NIR) captured simultaneously. The images are collected using JAI FS-3200D-10GE camera.
 
@@ -50,5 +58,7 @@ Furqan Ahmed Shaik, Abhishek Reddy, Nikhil Reddy Billa, Kunal Chaudhary, Sunny M
  Names and contact info
 
 Furqan Ahamad, furqan.shaik@research.iiit.ac.in 
+
 Sandeep Nagar [@Naagar](https://twitter.com/NaagarRN)
+
 Dr Girish Varma [girish-lab](https://girishvarma.in/)
