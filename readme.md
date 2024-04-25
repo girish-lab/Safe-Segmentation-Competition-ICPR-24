@@ -99,7 +99,7 @@ The dataset, including training data, ground truth, and an evaluation script, wi
 
 <h2 align="center"> Organisers </h2>
 
-<img src="/assets/drgirish.jpg" text="Dr Girish Varma, C-STAR and ML Lab at IIIT Hyderabad" width="310" height="350"> <img src="/assets/furqan.jpg" width="340" height="350"> <img src="/assets/sandeep.jpg" width="350" height="350">
+<img src="/assets/drgirish.jpg" text="Dr Girish Varma, C-STAR and ML Lab at IIIT Hyderabad" width="235" height="250"> <img src="/assets/furqan.jpg" width="240" height="250"> <img src="/assets/sandeep.jpg" width="250" height="250">
 
 
 
