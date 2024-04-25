@@ -1,6 +1,4 @@
 
-# <a href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24"> ICPR 2024 Competition on Safe Segmentation of Drive Scenes in  Unstructured Traffic and Adverse Weather Conditions</a>
-
 <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24/tree/main#-objective-">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24/tree/main#-guidelines-">Instructions </a> 
 
 
