@@ -1,28 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dataset</title>
-    <!-- Link to CSS file for styling -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="overview.html">Overview</a></li>
-            <li><a href="dataset.html">Dataset</a></li>
-            <li><a href="instructions.html">Instructions</a></li>
-        </ul>
-    </nav>
+<!DOCTYPE HTML>
 
-    <!-- Main Content -->
-    <div class="content">
-        <!-- Content from GitHub page -->
-        <h1>Dataset</h1>
-        <p>[Content from GitHub page]</p>
-    </div>
+<html>
+	
+<head>
+	<title>Competition</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.html" />
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="index.html" class="logo"><img src="images/autonue-logo-cvpr.png" width="280"></a>
+			<nav id="nav">
+				<a href="index.html">Home</a>
+				<a href="instruction.html">Instruction and Guideline</a>
+				<a href="dataset.html">Dataset</a>
+				
+				<a href="contact.html">Contact US</a>
+				<a href="https://icpr2024.org/#" target="_blank">ICPR 2024</a>
+			</nav>
+		</div>
+	</header>
+	<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+	
+
+	<!-- One -->
+	<section id="one">
+		<div class="inner">
+			<header>
+				<h2>Dataset details </h2>
+			</header>
+			<p>
+                The dataset consists of images collected in an unstructured road scenario, driving in adverse weather conditions
+                of rain, fog, lowlight and snow. Each individual RGB image has a more detailed near-infrared image (NIR)
+                captured simultaneously. The images are collected using JAI FS-3200D-10GE camera. The dataset comprises
+                5000 images, manually selected to represent various adverse weather scenarios, including rain, fog, low light,
+                and snow. Each RGB image also has a paired NIR image to provide image enhancement. Each image is densely 
+                annotated at the pixel level for semantic segmentation, utilizing a label set with a hierarchical structure 
+                consisting of 7 labels at level 1 and 30 labels at level 4.
+            </p>
+            <a href=""> Dataset page</a>
+            <a href=""> Download here</a>
+
+			</p>
+			<header>
+				<h2>Download Instructions </h2>
+			</header>
+			<p>     
+                <li>Click to <a href="https://idd.insaan.iiit.ac.in/dataset/download/">download</a> the Dataset and more details. 
+                        This will redirect you to the registration page to download the dataset.</li>
+                <li>Register an account at http://idd.insaan.iiit.ac.in/.</li>
+                <li>Go to Dataset > Download page in the menu.</li>
+                <li>Download the IDD-AW Dataset  by clicking on 'Download' under 'IDD AW Dataset'. This will generate a 24 hour 
+                        token to download the dataset.</li>
+                <li>Extract the downloaded compressed file into a folder.</li>
+                <li>Please run the data preparation code for generating ground truth segmentation masks as documented here: 
+                        https://github.com/AutoNUE/public-code. Use the following command for segmentation mask generation:</li>
+                <li>finally run $ `python preperation/createLabels.py --datadir $ANUE --id-type level3Id --num-workers $C `</li>
+            </p>
+			<p>The dataset, including training data, ground truth, and an evaluation script, will be made publicly 
+                available post-competition in accordance with ICPR guidelines.
+            </p>
+				
+		</div>
+	</section>	
+        <section id="one">
+		<div class="inner">
+			<header>
+				<h2>&nbsp; </h2>
+			</header>
+			<p>&nbsp;  </p>
+		</div>
+	</section>
+            
+	<section id="one">
+		<div class="inner">
+			<header>
+				<h2>&nbsp; </h2>
+			</header>
+			<p>&nbsp;  </p>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section id="footer">
+		<div class="inner">
+					
+			<div class="copyright">
+				Copyright  &copy; 2021 - All Rights Reserved   -  Safe-Segmentation-Competition-ICPR-24
+			</div>
+		</div>
+	</section>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
