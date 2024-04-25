@@ -1,3 +1,9 @@
+<ul>
+  <li class="active"><a href="http://yourdomain.com">Home</a></li>
+  <li><a href="http://yourdomain.com/about">About</a></li>
+  <li><a href="http://yourdomain.com/services">Overview</a></li>
+  <li><a href="http://yourdomain.com/contact">Instructions</a></li>
+</ul>
 
 <h1 align="center">
     <a href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24"> ICPR 2024 Competition on Safe Segmentation of Drive Scenes in  Unstructured Traffic and Adverse Weather Conditions</a>
