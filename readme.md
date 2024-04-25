@@ -34,7 +34,7 @@ The central challenge addressed by the competition is optimizing the Safe mIoU m
 
 ### How to Participate 
 
-<p align="center">Before you can submit your first results, you need to register with CodaLab and login to participate. Only then you can submit results to the evaluation server, which will score your submission on the non-public test set. </p>
+Before you can submit your first results, you need to register with CodaLab and login to participate. Only then you can submit results to the evaluation server, which will score your submission on the non-public test set. 
 
     Steps:
         1. Prepare your submission in the required format, as described under the Evaluation section. CodeLab expects you to upload a single zip.
@@ -60,7 +60,7 @@ Important note: It is NOT allowed to register multiple times to the server using
 ## Dataset details
 
 The dataset consists of images collected in an unstructured road scenario, driving in adverse weather conditions of rain, fog, lowlight and snow. Each individual RGB image has a more detailed near-infrared image (NIR) captured simultaneously. The images are collected using JAI FS-3200D-10GE camera.
-
+The dataset comprises 5000 images, manually selected to represent various adverse weather scenarios, including rain, fog, low light, and snow. Each RGB image also has a paired NIR image to provide image enhancement. Each image is densely annotated at the pixel level for semantic segmentation, utilizing a label set with a hierarchical structure consisting of 7 labels at level 1 and 30 labels at level 4
 
 
 <a align="center" href="https://iddaw.github.io/"> Dataset page</a>
@@ -96,7 +96,7 @@ The dataset, including training data, ground truth, and an evaluation script, wi
 
 ## Organisers 
 
-<img src="/assets/drgirish.jpg" text="Dr Girish Varma, C-STAR and ML Lab at IIIT Hyderabad" width="235" height="250"> <img src="/assets/furqan.jpg" width="240" height="250"> <img src="/assets/sandeep.jpg" width="250" height="250">
+<img src="https://www.iiit.ac.in/files/iiit/GirishVerma.jpg" width="235" height="250"> <img src="https://girish-lab.github.io/group/furqanshaik/pic.jpg" width="240" height="250"> <img src="https://girish-lab.github.io/group/sandeepnagar/pic.jpg" width="250" height="250">
 
 
 
