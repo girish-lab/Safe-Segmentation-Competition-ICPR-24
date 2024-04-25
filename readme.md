@@ -2,7 +2,7 @@
 <h1 align="center">
     <a href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24"> ICPR 2024 Competition on Safe Segmentation of Drive Scenes in  Unstructured Traffic and Adverse Weather Conditions</a>
 </h1>
-<p align="center"> <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="http://yourdomain.com/about">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="http://yourdomain.com/contact">Instructions </a> </p>
+<p align="center"> <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24/tree/main#-objective-">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24/tree/main#-guidelines-">Instructions </a> </p>
 
 <p align="center">
 This is a competition running for several months aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow.
