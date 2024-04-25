@@ -2,14 +2,14 @@
 <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-objective-">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-guidelines-">Instructions </a> 
 
 
-This is a competition running for several months aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow.
+This is a competition running for several months aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow. Emphasizing, the correct identification of safety-critical elements and penalizing unsafe false predictions (False).
 
 
 ## Objective 
 
 
 The central challenge addressed by the competition is optimizing the Safe mIoU metric for semantic segmentation in adverse weather conditions to ensure the safety of autonomous driving systems. Semantic segmentation plays a pivotal role in enabling autonomous vehicles to understand their surroundings, but adverse weather conditions pose significant challenges, often leading to hazardous situations. The competition aims to develop robust models that accurately segment driving scenes even in adverse weather conditions, focusing on prioritizing safety-related mispredictions.
-Emphasizing, the correct identification of safety-critical elements and penalizing unsafe false predictions (False ).
+
     
 ## Updates & News
 
