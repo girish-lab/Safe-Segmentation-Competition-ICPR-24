@@ -1,5 +1,5 @@
 
-<a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/tree/main#-objective-">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/tree/main#-guidelines-">Instructions </a> 
+<a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-objective-">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-guidelines-">Instructions </a> 
 
 
 This is a competition running for several months aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow.
@@ -9,7 +9,7 @@ This is a competition running for several months aimed at assessing the performa
 
 
 The central challenge addressed by the competition is optimizing the Safe mIoU metric for semantic segmentation in adverse weather conditions to ensure the safety of autonomous driving systems. Semantic segmentation plays a pivotal role in enabling autonomous vehicles to understand their surroundings, but adverse weather conditions pose significant challenges, often leading to hazardous situations. The competition aims to develop robust models that accurately segment driving scenes even in adverse weather conditions, focusing on prioritizing safety-related mispredictions.
-
+Emphasizing, the correct identification of safety-critical elements and penalizing unsafe false predictions (False ).
     
 ## Updates & News
 
@@ -30,7 +30,7 @@ The central challenge addressed by the competition is optimizing the Safe mIoU m
 
 ## Guidelines 
 
-### How to Participate 
+#### How to Participate 
 
 Before you can submit your first results, you need to register with CodaLab and login to participate. Only then you can submit results to the evaluation server, which will score your submission on the non-public test set. 
 
@@ -41,7 +41,6 @@ Before you can submit your first results, you need to register with CodaLab and 
         4. Select the appropriate phase, i.e., Single Scan or Multiple Scan, for which you computed the results.
         5. Enter the required fields, where you can supply also later more details, if you need to take care of anonymity in case of double blind submissions.
         6. Then you have to click "Submit" in the lower part of the page, which will open a file dialog. In the file dialog, you have to select your submission zip file, which will be then uploaded.
-        
         
         - The evaluation takes roughly 10 minutes to complete and you will have the choice, which of your submission gets added to the leaderboard.
 
@@ -78,10 +77,7 @@ The dataset comprises 5000 images, manually selected to represent various advers
 
 The dataset, including training data, ground truth, and an evaluation script, will be made publicly available post-competition in accordance with ICPR guidelines.
 
-
-
-
-## Evaluation Metrics: 
+#### Evaluation Metrics and base line code: 
 
 [code](https://github.com/Furqan7007/IDDAW_kit)
 
@@ -89,7 +85,7 @@ The dataset, including training data, ground truth, and an evaluation script, wi
     2 ...
     3. code [link]([https:](https://github.com/Furqan7007/IDDAW_kit))
 
-## Leaderboard 
+
 
 
 ## Organisers 
