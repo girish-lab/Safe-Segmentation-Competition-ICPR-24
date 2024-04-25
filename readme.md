@@ -1,5 +1,7 @@
 
-### <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-objective-">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-guidelines-">Instructions </a> 
+# Safe-Segmentation-Competition-ICPR-24
+
+## <a  href="https://girish-lab.github.io//">Home</a> <br> <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Overview</a> <br> <a href="https://iddaw.github.io/">Dataset</a> <br> <a href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Instructions </a> 
 
 Semantic segmentation plays a pivotal role in enabling autonomous vehicles to understand their surroundings, but adverse weather conditions pose significant challenges, often leading to hazardous situations. The central challenge addressed by the competition is optimizing the Safe mIoU metric for semantic segmentation in adverse weather conditions to ensure the safety of autonomous driving systems.
 
