@@ -16,7 +16,7 @@ The central challenge addressed by the competition is optimizing the Safe mIoU m
     
 <h2 align="center">Updates & News</h2>
 
-   Registration Start
+   Registration Open
     
 <h2 align="center"> Dataset Download  </h2>
 
@@ -67,13 +67,6 @@ Good luck with your submission!
 
 <p align="center">Important note: It is NOT allowed to register multiple times to the server using different email addresses. We are actively monitoring submissions and we will revoke access and delete submissions. When registering, we ask all participants to use a unique institutional email address (e.g., .edu) or company email address. We will not approve email addresses from free email services anymore (e.g., gmail.com, hotmail.com, qq.com). If you need to use such an email address, then contact us to approve. </p>
 
-<h2 align="center"> Awards </h2>
-
-    1 
-    2
-    3
-
-
 
 <h2 align="center"> Dataset details </h2>
 
@@ -92,8 +85,6 @@ The dataset consists of images collected in an unstructured road scenario, drivi
 The dataset, including training data, ground truth, and an evaluation script, will be made publicly available post-competition in accordance with ICPR guidelines.
 </p>
 
-<h2 align="center"> Methods: </h2>
-
 
 <h2 align="center"> Evaluation Metrics: </h2>
 
@@ -108,35 +99,24 @@ The dataset, including training data, ground truth, and an evaluation script, wi
 
 <h2 align="center"> Organisers </h2>
 
-![Dr Girish Varma, C-STAR and ML Lab at IIIT Hyderabad](/assets/drirish.png) ![alt text](/assets/furqan.png) ![alt text](assets/sandeep.png)
+<img src="/assets/drgirish.jpg" text="Dr Girish Varma, C-STAR and ML Lab at IIIT Hyderabad" width="310" height="350"> <img src="/assets/furqan.jpg" width="340" height="350"> <img src="/assets/sandeep.jpg" width="350" height="350">
 
 
-Dr Girish Varma, C-STAR and ML Lab at IIIT Hyderabad
-
-Furqan Ahmed, ML Lab, IIIT-Hyderabad
-
-Sandeep Nagar, ML Lab, IIIT-Hyderabad
 
 
+<a href="https://girishvarma.in/"> Dr Girish Varma, C-STAR and ML Lab, IIIT-H</a>              
+
+<a href="https://scholar.google.com/citations?user=rzHNVVgAAAAJ&hl=en&oi=ao"> Furqan Ahmed, ML Lab, IIIT-Hyderabad </a>  
+
+<a href="https://researchweb.iiit.ac.in/~sandeep.nagar/"> Sandeep Nagar, ML Lab, IIIT-H </a>
 
 
 
 <h2 align="center"> Reference </h2>
 
-[https://iddaw.github.io/](https://iddaw.github.io/)
+1. [https://iddaw.github.io/](https://iddaw.github.io/)
 
-Furqan Ahmed Shaik, Abhishek Reddy, Nikhil Reddy Billa, Kunal Chaudhary, Sunny Manchanda, Girish Varma; Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024, pp. 4614-4623
-
-<h2 align="center">
-    FAQ:
-</h2>
-
-    1
-    2
-    3
-    4
-    5
-    6
+2. Furqan Ahmed Shaik, Abhishek Reddy, Nikhil Reddy Billa, Kunal Chaudhary, Sunny Manchanda, Girish Varma; Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024, pp. 4614-4623
     
 
 <h2 align="center">
