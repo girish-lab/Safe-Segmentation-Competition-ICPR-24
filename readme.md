@@ -70,6 +70,7 @@ The dataset, including training data, ground truth, and an evaluation script, wi
 
 <h2 align="center"> Evaluation Metrics: </h2>
 
+[code](https://github.com/Furqan7007/IDDAW_kit)
 
     1 Safe mIoU
     2 ...
@@ -79,7 +80,10 @@ The dataset, including training data, ground truth, and an evaluation script, wi
 
 
 <h2 align="center"> Organisers </h2>
-    
+
+![alt text](/assest/drirish.png) ![alt text](/assest/furqan.png) ![alt text](assest/sandeep.png)
+
+
 Dr Girish Varma, C-STAR and ML Lab at IIIT Hyderabad
 
 Furqan Ahmed, ML Lab, IIIT-Hyderabad
