@@ -1,21 +1,17 @@
 
-
-
 <h1 align="center">
     <a href="https://github.com/girish-lab/Safe-Segmentation-Competition-ICPR-24"> ICPR 2024 Competition on Safe Segmentation of Drive Scenes in  Unstructured Traffic and Adverse Weather Conditions</a>
 </h1>
-<p align="center"> <a  href="http://yourdomain.com">Home</a>  <a  href="http://yourdomain.com/about">Overview</a> <a href="http://yourdomain.com/services">Dataset</a> <a href="http://yourdomain.com/contact">Instructions </a> </p>
+<p align="center"> <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="http://yourdomain.com/about">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="http://yourdomain.com/contact">Instructions </a> </p>
 
 <p align="center">
 This is a competition running for several months aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow.
 </p>
     
-<h2 align="center"> Updates </h2>
+<h2 align="center">Updates & News</h2>
 
-        1. Registration Open.
-        2. 
-        3. 
-
+   Registration Start
+    
 <h2 align="center"> Registration </h2>
 1. Click to [Download here] button below in the Dataset details. This will redirect you to the registration page.
 1. Register an account at http://idd.insaan.iiit.ac.in/.
