@@ -1,19 +1,10 @@
 
-<a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-objective-">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-guidelines-">Instructions </a> 
+### <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/">Home</a>  <a  href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-objective-">Overview</a> <a href="https://iddaw.github.io/">Dataset</a> <a href="https://girish-lab.github.io/Safe-Segmentation-Competition-ICPR-24/main#-guidelines-">Instructions </a> 
 
+Semantic segmentation plays a pivotal role in enabling autonomous vehicles to understand their surroundings, but adverse weather conditions pose significant challenges, often leading to hazardous situations. The central challenge addressed by the competition is optimizing the Safe mIoU metric for semantic segmentation in adverse weather conditions to ensure the safety of autonomous driving systems.
 
-This is a competition running for several months aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow. Emphasizing, the correct identification of safety-critical elements and penalizing unsafe false predictions (False).
+This competition is aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow. Emphasizing, the correct identification of safety-critical elements and penalizing unsafe false predictions (False). The Participants aims to develop robust models that accurately segment driving scenes even in adverse weather conditions, focusing on prioritizing safety-related mispredictions.
 
-
-## Objective 
-
-
-The central challenge addressed by the competition is optimizing the Safe mIoU metric for semantic segmentation in adverse weather conditions to ensure the safety of autonomous driving systems. Semantic segmentation plays a pivotal role in enabling autonomous vehicles to understand their surroundings, but adverse weather conditions pose significant challenges, often leading to hazardous situations. The competition aims to develop robust models that accurately segment driving scenes even in adverse weather conditions, focusing on prioritizing safety-related mispredictions.
-
-    
-## Updates & News
-
-   Registration Open
     
 
 
@@ -21,7 +12,7 @@ The central challenge addressed by the competition is optimizing the Safe mIoU m
 
 | Deadline    | Date |
 | -------- | ------- |
-| Registration    | July 21, 2024 |
+| Registration    | July 21, 2024 [apply](https://github.com/Furqan7007/IDDAW_kit) |
 | Competition Report Submission  | August 18, 2024    |
 | Camera-Ready Papers | September 02, 2024     |
 | Communicate Winners to Chairs    | October 28, 2024    |
@@ -51,13 +42,11 @@ Submission Policy: Only the training set is provided for learning the parameters
 We ask each participant to upload the final results of their algorithm/paper submission only once to the server and perform all other experiments on the validation set. If participants would like to report results in their papers for multiple versions of their algorithm (e.g., parameters or features), this must be done on the validation data and only the best performing setting of the novel method may be submitted for evaluation to our server. If comparisons to baselines from third parties (which have not been evaluated on the benchmark website) are desired, please contact us for a discussion. 
 
 
-Important note: It is NOT allowed to register multiple times to the server using different email addresses. We are actively monitoring submissions and we will revoke access and delete submissions. When registering, we ask all participants to use a unique institutional email address (e.g., .edu) or company email address. We will not approve email addresses from free email services anymore (e.g., gmail.com, hotmail.com, qq.com). If you need to use such an email address, then contact us to approve. 
-
 
 ## Dataset details
 
 The dataset consists of images collected in an unstructured road scenario, driving in adverse weather conditions of rain, fog, lowlight and snow. Each individual RGB image has a more detailed near-infrared image (NIR) captured simultaneously. The images are collected using JAI FS-3200D-10GE camera.
-The dataset comprises 5000 images, manually selected to represent various adverse weather scenarios, including rain, fog, low light, and snow. Each RGB image also has a paired NIR image to provide image enhancement. Each image is densely annotated at the pixel level for semantic segmentation, utilizing a label set with a hierarchical structure consisting of 7 labels at level 1 and 30 labels at level 4
+The dataset comprises 5000 images, manually selected to represent various adverse weather scenarios, including rain, fog, low light, and snow. Each RGB image also has a paired NIR image to provide image enhancement. Each image is densely annotated at the pixel level for semantic segmentation, utilizing a label set with a hierarchical structure consisting of 7 labels at level 1 and 30 labels at level 4.
 
 
 <a align="center" href="https://iddaw.github.io/"> Dataset page</a>
@@ -91,8 +80,6 @@ The dataset, including training data, ground truth, and an evaluation script, wi
 ## Organisers 
 
 <img src="https://www.iiit.ac.in/files/iiit/GirishVerma.jpg" width="235" height="250"> <img src="https://girish-lab.github.io/group/furqanshaik/pic.jpg" width="240" height="250"> <img src="https://girish-lab.github.io/group/sandeepnagar/pic.jpg" width="250" height="250">
-
-
 
 
 <a href="https://girishvarma.in/"> Dr Girish Varma, C-STAR and ML Lab, IIIT-H</a>              
