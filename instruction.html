@@ -78,10 +78,10 @@
 					<p><span class="math display">$$\label{eq:2}
 					\text{SmIoU} = \frac{\sum_{c\in C} I_c^{\text{safe}}}{|C|}$$</span></p>
 			</p>
-			<div class="">
+			<!-- <div class="">
 				<span class="image fit">
 					<img src="images/tree.png" alt = "">
-			</div> 
+			</div>  -->
 			<p> 
 				
 			</p>
@@ -102,7 +102,7 @@
                 <li>Extract the downloaded compressed file into a folder.</li>
                 <li>Please run the data preparation code for generating ground truth segmentation masks as documented here: 
                         https://github.com/AutoNUE/public-code. Use the following command for segmentation mask generation:</li>
-                <li>finally run $ `python preperation/createLabels.py --datadir $ANUE --id-type level3Id --num-workers $C `</li>
+                <li>finally run `python preperation/createLabels.py --datadir $ANUE --id-type level3Id --num-workers $C `</li>
             </p>
 			<p>The dataset, including training data, ground truth, and an evaluation script, will be made publicly 
                 available post-competition in accordance with ICPR guidelines.
