@@ -39,6 +39,30 @@
 			<header>
 				<h2>Evaluation</h2>
 			</header>
+			<p>
+				<h3>Heirarchical Labeling and Tree Distance </h3>
+				The essence of SmIoU lies in the introduction of hierarchical 
+				penalty, a strategy that takes into account the semantic relationships between classes. 
+				Heirarchical Labeling refers to the structured organization of 
+				classes into a tree-like hierarchy, capturing semantic relationships 
+				and dependencies between them in the context of semantic segmentation. 
+				It provides a inherent semantic relationship between classes and also
+				provides structured heirarchy for a comprehensive understanding of classes.  
+				<p>
+					Misclassifications within
+					critical classes, and non-critical classes classified as critical,
+					are penalized based on their distance in the class hierarchy.
+					The tree distance (td) between a pair of labels is the length
+					of the shortest path in the class hierarchy tree divided by
+					2 
+				</p>
+
+				<!-- <h3> Tree Distance </h3>
+				<p>
+					Here, we use tree distance to correctly quantify the semantic relationship between classes. This
+
+				</p> -->
+			</p>
 			<div class="">
 				<span class="image fit">
 					<img src="images/tree.png" alt = "">
