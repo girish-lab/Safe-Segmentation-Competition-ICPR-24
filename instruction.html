@@ -56,12 +56,13 @@
 					of the shortest path in the class hierarchy tree divided by
 					2 
 				</p>
-
-				<!-- <h3> Tree Distance </h3>
-				<p>
-					Here, we use tree distance to correctly quantify the semantic relationship between classes. This
-
-				</p> -->
+			</p>
+			<p>
+				<h3>Calculation of Safe mIoU</h3>
+				The calculation of SmIoU involves computing the individual safe ious
+				for each class. The safe IoUs are the IoUs with a penalty for misclassification
+				of that class weighted by the tree distance. The final SmIoU
+				score is obtained by taking the mean of these individual safe ious. 
 			</p>
 			<div class="">
 				<span class="image fit">
