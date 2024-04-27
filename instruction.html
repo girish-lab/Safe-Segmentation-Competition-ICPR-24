@@ -63,7 +63,23 @@
 				for each class. The safe IoUs are the IoUs with a penalty for misclassification
 				of that class weighted by the tree distance. The final SmIoU
 				score is obtained by taking the mean of these individual safe ious. 
+				
+				<p>Let <i>C</i> be the set of all classes at the bottom level of the hierarchy, <i>d(c,s)</i> be the
+					tree distance between class <i>c</i> and <i>s</i>, and <i>n</i> be the number of levels in the
+					hierarchy, <span class="math inline">gt<sub><em>c</em></sub></span> the
+					set of pixels in the ground truth with label <span
+					class="math inline"><em>c</em></span> and <span
+					class="math inline">pred<sub><em>s</em></sub></span> the set of pixels
+					in the prediction with label <span
+					class="math inline"><em>s</em></span>. We define the following
+					quantities: <span class="math display">$$\begin{aligned}
+					I_{c,s}^{\text{safe}} &amp;= \frac{ | \text{gt}_c \cap \text{pred}_s |}{
+					| \text{gt}_c \cup \text{pred}_c |} \tag{a} \qquad
+					I_{c,c} &amp;= \frac{ | \text{gt}_c \cap \text{pred}_c |}{ | \text{gt}_c
+					\cup \text{pred}_c |}
+					\end{aligned}$$</span></p>
 
+				Now we define SmIoU as follows: 
 				<p><span class="math display">$$\label{eq:1}
 					I_c^{\text{safe}}  =
 					\begin{cases}
