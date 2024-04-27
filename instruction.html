@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <html>
-	
+	<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <head>
 	<title>Safe-Seg-24</title>
 	<meta charset="utf-8" />
@@ -63,6 +63,20 @@
 				for each class. The safe IoUs are the IoUs with a penalty for misclassification
 				of that class weighted by the tree distance. The final SmIoU
 				score is obtained by taking the mean of these individual safe ious. 
+
+				<p><span class="math display">$$\label{eq:1}
+					I_c^{\text{safe}}  =
+					\begin{cases}
+					\begin{aligned}[t]
+							I_{c,c} &amp; - \sum_{s \in C , s \neq
+					c}\frac{d(c,s)}{n}I_{c,s}^{\text{safe}} &amp; \text{ if } c \in
+					C_{\text{imp}} \\
+							I_{c,c} &amp; - \sum_{s \in C_{\text{imp}}
+					}\frac{d(c,s)}{n}I_{c,s}^{\text{safe}}&amp; \text{ else. }
+					\end{aligned}
+					\end{cases}$$</span></p>
+					<p><span class="math display">$$\label{eq:2}
+					\text{SmIoU} = \frac{\sum_{c\in C} I_c^{\text{safe}}}{|C|}$$</span></p>
 			</p>
 			<div class="">
 				<span class="image fit">
