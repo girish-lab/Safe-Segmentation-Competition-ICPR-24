@@ -39,11 +39,31 @@
 			<header>
 				<h2>Evaluation</h2>
 			</header>
-			<p>&nbsp;  </p>
+			<p>  </p>
 		</div>
 	</section>
 	<section id="one" style="background-color: antiquewhite;">
 		<div class="inner">
+			<header>
+				<h2>Download Instructions </h2>
+			</header>
+			<p>     
+                <li>Click to <a href="https://idd.insaan.iiit.ac.in/dataset/download/">download</a> the Dataset and more details. 
+                        This will redirect you to the registration page to download the dataset.</li>
+                <li>Register an account at http://idd.insaan.iiit.ac.in/.</li>
+                <li>Go to Dataset > Download page in the menu.</li>
+                <li>Download the IDD-AW Dataset  by clicking on 'Download' under 'IDD AW Dataset'. This will generate a 24 hour 
+                        token to download the dataset.</li>
+                <li>Extract the downloaded compressed file into a folder.</li>
+                <li>Please run the data preparation code for generating ground truth segmentation masks as documented here: 
+                        https://github.com/AutoNUE/public-code. Use the following command for segmentation mask generation:</li>
+                <li>finally run $ `python preperation/createLabels.py --datadir $ANUE --id-type level3Id --num-workers $C `</li>
+            </p>
+			<p>The dataset, including training data, ground truth, and an evaluation script, will be made publicly 
+                available post-competition in accordance with ICPR guidelines.
+            </p>
+				
+		</div>
 			<header>
 				<h2>Guidelines </h2>
 			</header>
