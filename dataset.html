@@ -60,6 +60,14 @@
 					<span class="image fit">
 						<img src="images/data_table.png" alt = "" style="float:right;width:400px;height:400px;">
 				</div>
+
+				Our dataset annotations have unique labels like billboard, autorickshaw, animal etc. We also focus on identifying probable safe driving areas beside the road.
+
+				The labels for the dataset are organized as a 4 level hierarchy. Unique integer identifiers are given for each of these levels. The histogram below gives:
+				
+				<li>Pixel counts for each label in the y axis.</li>
+				<li>The four level label hierarchy and the label ids for intermediate levels (level 2, level 3).</li>	
+				<li>The color coding used for the prediction and ground truth masks are given to the corresponding bars.</li>
 				<div class="">
 					<span class="image fit">
 						<img src="images/idd_iddaw_pixel_comp.png" alt = "">
@@ -70,22 +78,29 @@
 				<h2>Label Heirarchy and Statistics </h2>
 			</header>
 			<p>
-				Our dataset annotations have unique labels like billboard, autorickshaw, animal etc. We also focus on identifying probable safe driving areas beside the road.
-
-				The labels for the dataset are organized as a 4 level hierarchy. Unique integer identifiers are given for each of these levels. The histogram below gives:
-				
-				<li>Pixel counts for each label in the y axis.</li>
-				<li>The four level label hierarchy and the label ids for intermediate levels (level 2, level 3).</li>	
-				<li>The color coding used for the prediction and ground truth masks are given to the corresponding bars.</li>
+				<div>
+					<h3>Pixel-wise Comparison:</h3>
+					<ul>
+						<li>IDD-AW has more pixels compared to ACDC.</li>
+						<li>The pixel counts are normalized by resolution and the number of images in the datasets.</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Traffic Participants Instances Count:</h3>
+					<ul>
+						<li>IDD-AW has more instances per image of traffic participants (TP) than ACDC.</li>
+						<li>Traffic participants include all vehicles and living things that represent unstructured traffic.</li>
+						<li>There are over 300 images in IDD-AW with more than 20 instances of TP, while ACDC has only around 10.</li>
+					</ul>
 				
 				<div class="">
 					<span class="image fit">
 						<img src="images/acdc_iddaw_labelcomp_tp.png" alt = "" >
 				</div>
-				<div class="">
+				<!-- <div class="">
 					<span class="image fit">
 						<img src="images/comp_values.png" alt = "">
-				</div>
+				</div> -->
 				
 			</p>
 
