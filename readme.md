@@ -10,15 +10,7 @@ This competition is aimed at assessing the performance of semantic segmentation 
     
 
 
-## Timeline 
 
-| Deadline    | Date |
-| -------- | ------- |
-| Registration    | July 21, 2024 [apply](https://github.com/Furqan7007/IDDAW_kit) |
-| Competition Report Submission  | August 18, 2024    |
-| Camera-Ready Papers | September 02, 2024     |
-| Communicate Winners to Chairs    | October 28, 2024    |
-| Presentation at ICPR Conference | December 1-5, 2024 |
 
 
 ## Guidelines 
