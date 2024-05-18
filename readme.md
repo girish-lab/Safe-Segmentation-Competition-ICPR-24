@@ -5,11 +5,11 @@
 
 Semantic segmentation plays a pivotal role in enabling autonomous vehicles to understand their surroundings, but adverse weather conditions pose significant challenges, often leading to hazardous situations. The central challenge addressed by the competition is optimizing the Safe mIoU metric for semantic segmentation in adverse weather conditions to ensure the safety of autonomous driving systems.
 
-This competition is aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow. Emphasizing, the correct identification of safety-critical elements and penalizing unsafe false predictions (False). The Participants aims to develop robust models that accurately segment driving scenes even in adverse weather conditions, focusing on prioritizing safety-related mispredictions.
+This competition is aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow. Emphasizing the correct identification of safety-critical elements and penalizing unsafe false predictions (False). The Participants aim to develop robust models that accurately segment driving scenes even in adverse weather conditions, focusing on prioritizing safety-related mispredictions.
 
     
 
-
+## Sample dataset: https://drive.google.com/drive/folders/1YZMmtf-HHH_XYFrBQy0pk9HaBkwalYgp
 
 
 
