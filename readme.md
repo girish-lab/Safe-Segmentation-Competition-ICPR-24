@@ -7,7 +7,7 @@ Semantic segmentation plays a pivotal role in enabling autonomous vehicles to un
 
 This competition is aimed at assessing the performance of semantic segmentation models in adverse weather conditions for autonomous driving. Participants are provided with the IDD-AW dataset, comprising 5000 pairs of high-quality images with pixel-level annotations, captured under adverse weather conditions such as rain, fog, low light, and snow. Emphasizing the correct identification of safety-critical elements and penalizing unsafe false predictions (False). The Participants aim to develop robust models that accurately segment driving scenes even in adverse weather conditions, focusing on prioritizing safety-related mispredictions.
 
-    
+## To registration: [Fill this form](https://forms.office.com/r/61Xu4QDTQK)
 
 ## Sample dataset: https://drive.google.com/drive/folders/1YZMmtf-HHH_XYFrBQy0pk9HaBkwalYgp
 
