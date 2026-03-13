@@ -1,0 +1,543 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Test Data Evaluation - Safe-Seg-24</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/gvLab.png">
+    <style>
+        .evaluation-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .upload-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .upload-section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .file-input-wrapper input[type="file"] {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .file-input-label {
+            display: block;
+            padding: 15px;
+            background-color: #443939;
+            color: white;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .file-input-label:hover {
+            background-color: #2d2626;
+        }
+
+        .file-name {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .requirements {
+            background-color: #e8f4f8;
+            border-left: 4px solid #0088cc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .requirements h3 {
+            margin-top: 0;
+            color: #0088cc;
+        }
+
+        .requirements ul {
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+
+        .requirements li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .submit-btn {
+            background-color: #443939;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #2d2626;
+        }
+
+        .submit-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .results-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .results-section.show {
+            display: block;
+        }
+
+        .error-message {
+            background-color: #fee;
+            border-left: 4px solid #c33;
+            color: #c33;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .success-message {
+            background-color: #efe;
+            border-left: 4px solid #3c3;
+            color: #3c3;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-box.safe {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .metric-value {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .class-results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .class-results-table thead {
+            background-color: #443939;
+            color: white;
+        }
+
+        .class-results-table th,
+        .class-results-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .class-results-table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .class-results-table .important {
+            font-weight: bold;
+            background-color: #fff3cd;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #443939;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .info-box {
+            background-color: #f0f8ff;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+
+        @media (max-width: 768px) {
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .evaluation-container {
+                margin: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" style="background-color: #443939;">
+        <div class="inner">
+            <a href="../index.html" class="logo">Safe-Segmentation</a>
+            <nav id="nav">
+                <a href="../index.html">Home</a>
+                <a href="../dataset.html">IDD-AW Dataset</a>
+                <a href="../instruction.html">Instruction & Guideline</a>
+                <a href="https://forms.office.com/r/61Xu4QDTQK">Register</a>
+                <a href="../faq.html">FAQ</a>
+                <a href="../contact.html">Contact Us</a>
+                <a href="https://icpr2024.org/#" target="_blank">ICPR 2024</a>
+            </nav>
+        </div>
+    </header>
+    <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+    <!-- Main Content -->
+    <section id="main" style="background-color: antiquewhite;">
+        <div class="evaluation-container">
+            <h1>Test Data Evaluation</h1>
+            
+            <div class="info-box">
+                <h3>📊 Evaluate Your Predictions</h3>
+                <p>Upload your semantic segmentation predictions for the IDDAW test set to get your mIoU and Safe mIoU scores.</p>
+            </div>
+
+            <!-- Upload Section -->
+            <div class="upload-section">
+                <h2>Upload Predictions</h2>
+                
+                <div class="requirements">
+                    <h3>Requirements:</h3>
+                    <ul>
+                        <li><strong>Format:</strong> ZIP file containing PNG prediction files</li>
+                        <li><strong>File Size:</strong> Maximum 500 MB</li>
+                        <li><strong>Filename Format:</strong> Predictions should match ground truth filenames (or use *_pred.png pattern)</li>
+                        <li><strong>Image Format:</strong> PNG files with same dimensions as ground truth</li>
+                        <li><strong>Values:</strong> Pixel values should be class IDs (0-25)</li>
+                    </ul>
+                </div>
+
+                <form id="uploadForm">
+                    <div class="form-group">
+                        <label for="userName">Team/Name (Optional):</label>
+                        <input type="text" id="userName" name="userName" placeholder="Your team name or identifier">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Email (Optional):</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select ZIP File:</label>
+                        <div class="file-input-wrapper">
+                            <input type="file" id="fileInput" name="file" accept=".zip" required>
+                            <label for="fileInput" class="file-input-label">
+                                📁 Click to select file or drag and drop
+                            </label>
+                        </div>
+                        <div class="file-name" id="fileName"></div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">Evaluate Predictions</button>
+                </form>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="resultsSection">
+                <h2>Evaluation Results</h2>
+                
+                <div id="messageBox"></div>
+
+                <div id="resultsContent" style="display: none;">
+                    <!-- Overall Metrics -->
+                    <h3>Overall Metrics</h3>
+                    <div class="metrics-grid">
+                        <div class="metric-box">
+                            <div class="metric-label">mIoU (All Classes)</div>
+                            <div class="metric-value" id="overallMiou">-</div>
+                        </div>
+                        <div class="metric-box safe">
+                            <div class="metric-label">Safe mIoU (All Classes)</div>
+                            <div class="metric-value" id="overallSafeMiou">-</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-label">mIoU (Safety-Critical Classes)</div>
+                            <div class="metric-value" id="importantMiou">-</div>
+                        </div>
+                        <div class="metric-box safe">
+                            <div class="metric-label">Safe mIoU (Safety-Critical)</div>
+                            <div class="metric-value" id="importantSafeMiou">-</div>
+                        </div>
+                    </div>
+
+                    <!-- Per-Class Results -->
+                    <h3>Per-Class Results</h3>
+                    <p id="processedInfo" style="color: #666; font-size: 14px;"></p>
+                    <table class="class-results-table">
+                        <thead>
+                            <tr>
+                                <th>Class ID</th>
+                                <th>Class Name</th>
+                                <th>mIoU (%)</th>
+                                <th>Safe mIoU (%)</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody id="classResultsBody">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="loadingSection" class="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Evaluating predictions...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="inner">
+            <div class="copyright">
+                Copyright &copy; 2024 - All Rights Reserved - Safe-Segmentation-Competition-ICPR-24
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/skel.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+        // Drag and drop file upload
+        const fileInput = document.getElementById('fileInput');
+        const fileInputLabel = document.querySelector('.file-input-label');
+        const fileNameDiv = document.getElementById('fileName');
+
+        fileInput.addEventListener('change', (e) => {
+            updateFileName(e.target.files[0]);
+        });
+
+        // Drag and drop
+        document.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            fileInputLabel.style.backgroundColor = '#2d2626';
+        });
+
+        document.addEventListener('dragleave', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            fileInputLabel.style.backgroundColor = '#443939';
+        });
+
+        document.addEventListener('drop', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            fileInputLabel.style.backgroundColor = '#443939';
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                fileInput.files = files;
+                updateFileName(files[0]);
+            }
+        });
+
+        function updateFileName(file) {
+            if (file) {
+                const sizeMB = (file.size / (1024 * 1024)).toFixed(2);
+                fileNameDiv.textContent = `📄 ${file.name} (${sizeMB} MB)`;
+            } else {
+                fileNameDiv.textContent = '';
+            }
+        }
+
+        // Form submission
+        const uploadForm = document.getElementById('uploadForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const resultsSection = document.getElementById('resultsSection');
+        const messageBox = document.getElementById('messageBox');
+        const resultsContent = document.getElementById('resultsContent');
+        const loadingSection = document.getElementById('loadingSection');
+
+        uploadForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const file = fileInput.files[0];
+            if (!file) {
+                showMessage('Please select a file', 'error');
+                return;
+            }
+
+            if (!file.name.endsWith('.zip')) {
+                showMessage('Please select a ZIP file', 'error');
+                return;
+            }
+
+            // Prepare form data
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('user_name', document.getElementById('userName').value);
+            formData.append('user_id', document.getElementById('userEmail').value);
+
+            // Show results section with loading
+            resultsSection.classList.add('show');
+            resultsContent.style.display = 'none';
+            loadingSection.style.display = 'block';
+            messageBox.innerHTML = '';
+
+            // Submit
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch('/api/evaluate', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.status === 'success') {
+                    displayResults(data);
+                    showMessage('✓ Evaluation completed successfully!', 'success');
+                } else {
+                    showMessage(`Error: ${data.message}`, 'error');
+                }
+            } catch (error) {
+                showMessage(`Network error: ${error.message}`, 'error');
+            } finally {
+                submitBtn.disabled = false;
+                loadingSection.style.display = 'none';
+                resultsContent.style.display = 'block';
+            }
+        });
+
+        function showMessage(message, type) {
+            const className = type === 'error' ? 'error-message' : 'success-message';
+            messageBox.innerHTML = `<div class="${className}">${message}</div>`;
+        }
+
+        function displayResults(data) {
+            // Overall metrics
+            document.getElementById('overallMiou').textContent = data.overall_miou.toFixed(2) + '%';
+            document.getElementById('overallSafeMiou').textContent = data.overall_safe_miou.toFixed(2) + '%';
+            document.getElementById('importantMiou').textContent = data.important_miou.toFixed(2) + '%';
+            document.getElementById('importantSafeMiou').textContent = data.important_safe_miou.toFixed(2) + '%';
+
+            // Processed images info
+            document.getElementById('processedInfo').textContent = 
+                `Processed: ${data.processed_images} images | Skipped: ${data.skipped_images} images`;
+
+            // Per-class results
+            const tbody = document.getElementById('classResultsBody');
+            tbody.innerHTML = '';
+
+            data.class_results.forEach(result => {
+                const row = document.createElement('tr');
+                if (result.is_important) {
+                    row.classList.add('important');
+                }
+                row.innerHTML = `
+                    <td>${result.class_id}</td>
+                    <td>${result.class_name}</td>
+                    <td>${result.miou.toFixed(2)}%</td>
+                    <td>${result.safe_miou.toFixed(2)}%</td>
+                    <td>${result.is_important ? '⭐ Safety-Critical' : 'Standard'}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+    </script>
+</body>
+</html>
